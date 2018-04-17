@@ -14,7 +14,7 @@ let util = null
 let assets = null
 let level = null
 
-const startingX = 4500
+const startingX = 0
 
 const modAssetsPos = () => {
   assets.background.x -= startingX
@@ -139,7 +139,7 @@ const updatePositions = (collisionDirection) => {
     hero.vy = 0
     hero.y = collisionDirection.top
   } else if (collisionDirection.bottom) {
-    hero.vy = 0
+    hero.vy = Math.min(0, hero.vy)
     hero.y = collisionDirection.bottom
   }
 

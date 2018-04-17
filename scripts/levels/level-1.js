@@ -6,7 +6,19 @@ define(() => {
       {
         x: 920,
         y: 685,
-        width: 225,
+        width: 45,
+        height: 45
+      },
+      {
+        x: 965,
+        y: 685,
+        width: 45,
+        height: 45
+      },
+      {
+        x: 1010,
+        y: 685,
+        width: 135,
         height: 45
       },
       {
